@@ -1,7 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMDB API</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+   
+</head>
 <body>
+    
+    <div class="topnav">
+        <input type ="text" id="movie-search-box" placeholder="Search Movie Title ...">
+        <button type = "button" onclick="getMovie()" style="float: right; margin-right: 50%; padding: 10px; margin-top: 8px; margin-bottom: 8px; border: none;">Search</button>
+    </div>
+    <main>
 
+        
+
+        <div class="infocontainer">
+
+            <div class="infotext">
+                <p>Enter in the name of a movie to recieve its poster and some details about the movie.</p>
+            </div>
+
+            <h2>Poster</h2>
+            
+            <div id="Poster">               
+            </div>
+
+            <h2>Title</h2>
+            <h3 id="Title"></h3>
+
+            <h3>Year of Release</h3>
+            <h4 id="Year"></h4>
+
+            <h3>Movie Runtime</h3>
+            <h4 id="Runtime"></h4>
+
+            <h3>Genres</h3>
+            <h4 id="Genre"></h4>
+
+            <h3>Actors</h3>
+            <h4 id="Actors"></h4>
+
+            <h3>Movie's rating:</h3>
+            <h4 id="imdbRating"></h4>
+        
+        </div>
+    
+    </main>
+    
+    <script src = "script.js"></script>
 
 </body>
 </html>
